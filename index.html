@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jharkhand News Portal - Latest news and updates from Jharkhand">
+    <meta name="keywords" content="Jharkhand news, Hindi news, breaking news, latest news">
+    <title>Jharkhand News Portal - Latest News & Updates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1><i class="fas fa-newspaper"></i> Jharkhand News</h1>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="समाचार खोजें..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="active">मुख्य पृष्ठ</a></li>
+                <li><a href="#">राज्य समाचार</a></li>
+                <li><a href="#">राजनीति</a></li>
+                <li><a href="#">खेल</a></li>
+                <li><a href="#">व्यापार</a></li>
+                <li><a href="#">मनोरंजन</a></li>
+                <li><a href="#">स्वास्थ्य</a></li>
+                <li><a href="#">शिक्षा</a></li>
+                <li><a href="#">धर्म</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="container">
+            <span class="breaking-label">ब्रेकिंग न्यूज़</span>
+            <div class="breaking-content">
+                <p>झारखंड में नई औद्योगिक नीति की घोषणा • रांची में मेट्रो प्रोजेक्ट को मिली मंजूरी • राज्य में बेरोजगारी भत्ते की राशि बढ़ी</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Left Content Area -->
+                <section class="content-area">
+                    <!-- Featured News -->
+                    <section class="featured-news">
+                        <article class="featured-article" id="featured-article">
+                            <!-- Featured article will be populated by JavaScript -->
+                        </article>
+                    </section>
+
+                    <!-- Latest News Grid -->
+                    <section class="news-section">
+                        <h2 class="section-title">ताजा समाचार</h2>
+                        <div class="news-grid" id="news-grid">
+                            <!-- News articles will be populated by JavaScript -->
+                        </div>
+                    </section>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Trending News -->
+                    <div class="widget">
+                        <h3 class="widget-title">ट्रेंडिंग न्यूज़</h3>
+                        <div class="trending-list" id="trending-news">
+                            <!-- Trending news will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="widget">
+                        <h3 class="widget-title">श्रेणियां</h3>
+                        <div class="categories">
+                            <a href="#" class="category-link">राज्य समाचार</a>
+                            <a href="#" class="category-link">राजनीति</a>
+                            <a href="#" class="category-link">खेल</a>
+                            <a href="#" class="category-link">व्यापार</a>
+                            <a href="#" class="category-link">मनोरंजन</a>
+                            <a href="#" class="category-link">स्वास्थ्य</a>
+                        </div>
+                    </div>
+
+                    <!-- Advertisement -->
+                    <div class="widget ad-widget">
+                        <div class="ad-placeholder">
+                            <p>विज्ञापन स्थान</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="widget">
+                        <h3 class="widget-title">हमसे जुड़ें</h3>
+                        <div class="social-widget">
+                            <a href="#" class="social-item facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-item twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-item youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-item instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jharkhand News Portal</h3>
+                    <p>झारखंड की सबसे विश्वसनीय न्यूज़ वेबसाइट। यहां मिलती है राज्य और देश की ताजा खबरें।</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>महत्वपूर्ण लिंक</h4>
+                    <ul>
+                        <li><a href="#">हमारे बारे में</a></li>
+                        <li><a href="#">संपर्क करें</a></li>
+                        <li><a href="#">गोपनीयता नीति</a></li>
+                        <li><a href="#">नियम व शर्तें</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>श्रेणियां</h4>
+                    <ul>
+                        <li><a href="#">राज्य समाचार</a></li>
+                        <li><a href="#">राजनीति</a></li>
+                        <li><a href="#">खेल</a></li>
+                        <li><a href="#">व्यापार</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>संपर्क जानकारी</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@jharkhhandnews.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <p><i class="fas fa-map-marker-alt"></i> रांची, झारखंड</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jharkhand News Portal. सभी अधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
