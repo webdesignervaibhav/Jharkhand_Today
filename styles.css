@@ -774,3 +774,92 @@ a:focus, button:focus, input:focus {
         padding: 0;
     }
 }
+/* --- ANIMATION CLASSES --- */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.slide-up {
+    animation: slideUp 0.8s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+}
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.bounce {
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.pulse {
+    animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(42,82,152,0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(42,82,152,0); }
+    100% { box-shadow: 0 0 0 0 rgba(42,82,152,0); }
+}
+.scale-in {
+    animation: scaleIn 0.7s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+}
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.rotate-in {
+    animation: rotateIn 0.7s ease forwards;
+}
+@keyframes rotateIn {
+    from { transform: rotate(-90deg); opacity: 0; }
+    to { transform: rotate(0); opacity: 1; }
+}
+.shimmer {
+    position: relative;
+    overflow: hidden;
+}
+.shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -150%; width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmerMove 2s infinite;
+}
+@keyframes shimmerMove {
+    100% { left: 150%; }
+}
+/* --- END ANIMATION CLASSES --- */
+
+/* --- ENHANCED MOBILE ANIMATION --- */
+@media (max-width: 768px) {
+    .nav-menu {
+        transition: max-height 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+        max-height: 0;
+        overflow: hidden;
+    }
+    .nav-menu.active {
+        max-height: 500px;
+        display: flex;
+    }
+    .sidebar {
+        animation: fadeIn 0.8s ease;
+    }
+    .widget {
+        animation: scaleIn 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    .news-card {
+        animation: fadeIn 0.8s ease;
+    }
+}
+@media (max-width: 480px) {
+    .featured-title, .section-title, .widget-title {
+        animation: slideUp 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    .footer-section {
+        animation: fadeIn 1s ease;
+    }
+}
